@@ -40,6 +40,6 @@ This is a personal portfolio website built using React and Vite. It showcases pr
 
 
 
-This portfolio was created by a Milind Yadav, showcasing skills in React, modern CSS, and frontend animations.
+This portfolio was created by Milind Yadav with ♥️, showcasing skills in React, modern CSS, and frontend animations.
 
 ---
