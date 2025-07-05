@@ -1,0 +1,35 @@
+.about-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  // background-color: #ed8080; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.left-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: auto;
+  z-index: 10;
+}
+
+.about-text {
+  color: #686868; /* light text */
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+  max-width:90vw;
+  line-height: 1.4;
+  user-select: none;
+}
+
+.word {
+  cursor: pointer;
+  white-space: nowrap;
+}
