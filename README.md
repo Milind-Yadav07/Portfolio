@@ -1,4 +1,4 @@
-# Portfolio Clone
+# Portfolio
 
 This is a personal portfolio website built using React and Vite. It showcases projects, skills, and collaboration experiences, designed with modern frontend technologies and animations to create an engaging user experience.
 
@@ -40,6 +40,4 @@ This is a personal portfolio website built using React and Vite. It showcases pr
 
 
 
-This portfolio was created by a Milind Yadav, showcasing skills in React, modern CSS, and frontend animations.
-
----
+This portfolio was created by Milind Yadav with♥️, showcasing skills in React, modern CSS, and frontend animations.
