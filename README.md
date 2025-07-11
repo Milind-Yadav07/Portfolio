@@ -9,7 +9,6 @@ This is a personal portfolio website built using React and Vite. It showcases pr
 - Sections for About, Projects, Skills, Collaboration, and Contact
 - Custom cursor effects
 - Hamburger menu for easy navigation on smaller screens
-- Downloadable resume PDF
 
 ## Tech Stack
 
