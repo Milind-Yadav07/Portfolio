@@ -1,0 +1,263 @@
+.contact-section {
+  padding: 2rem;
+  color: #fff;
+  // background-color: #c62a2a;
+  // width: 800px;
+  margin: 0 auto;
+  width:100vw;
+  height:100vh;
+  box-sizing: border-box
+}
+
+.contact-title-area {
+  margin-bottom: 3rem;
+  margin-left:5rem;
+}
+
+.contact-subheading {
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+  // margin-left: 1rem;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #9acd32; /* purple */
+  margin-bottom: 1rem;
+  // margin-left: 1rem;
+}
+
+.contact-description {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  // margin-left: 1rem;
+}
+
+.contact-form {
+  // background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width:50rem;
+  margin-left:20rem;
+}
+
+.contact-input,
+.contact-textarea {
+  background: transparent;
+  border:   1px solid #6038ff;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: monospace;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #fff;
+}
+.contact-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-button {
+  align-self:center;
+  background: transparent;
+  border: 1px solid #6038ff;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive styles */
+// Extra Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .contact-section {
+    padding: 1rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .contact-title-area {
+    margin-left: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .contact-subheading {
+    font-size: 0.7rem;
+  }
+
+  .contact-heading {
+    font-size: 1.4rem;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 0.85rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .contact-textarea {
+    min-height: 120px;
+  }
+
+  .contact-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+// Small devices (landscape phones, 576px - 767.98px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact-section {
+    padding: 1.5rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .contact-title-area {
+    margin-left: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-subheading {
+    font-size: 0.8rem;
+  }
+
+  .contact-heading {
+    font-size: 1.8rem;
+  }
+
+  .contact-description {
+    font-size: 1.1rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-button {
+    font-size: 0.9rem;
+    padding: 0.65rem 1.6rem;
+  }
+}
+
+// Medium devices (tablets, 768px - 991.98px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-section {
+    padding: 2rem;
+  }
+
+  .contact-title-area {
+    margin-left: 2rem;
+  }
+
+  .contact-subheading {
+    font-size: 0.9rem;
+  }
+
+  .contact-heading {
+    font-size: 2.4rem;
+  }
+
+  .contact-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+}
+
+// Large devices (desktops, 992px - 1199.98px)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-section {
+    padding: 2rem;
+  }
+
+  .contact-title-area {
+    margin-left: 3rem;
+  }
+
+  .contact-heading {
+    font-size: 2.6rem;
+  }
+
+  .contact-description {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    width: 45rem;
+    margin-left: 12rem;
+  }
+}
+
+// Extra Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .contact-section {
+    padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .contact-title-area {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact-heading {
+    font-size: 3rem;
+  }
+
+  .contact-description {
+    font-size: 1.25rem;
+  }
+
+  .contact-form {
+    width: 50rem;
+    margin-left: 20rem;
+  }
+}

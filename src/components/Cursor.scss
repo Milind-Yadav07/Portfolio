@@ -1,0 +1,39 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1rem; /* 4 units */
+  height: 1rem; /* 4 units */
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2.5rem; /* 10 units */
+  height: 2.5rem; /* 10 units */
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-0.25rem, -0.25rem); /* offset slightly top-left */
+  transition: transform 0.3s ease;
+}
+
+/* Show cursor and follower when active */
+.cursor,
+.cursor-follower {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
