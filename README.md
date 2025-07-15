@@ -3,7 +3,7 @@
 This is a personal portfolio website built using React and Vite. It showcases projects, skills, and collaboration experiences, designed with modern frontend technologies and animations to create an engaging user experience.
 
 
-### <a href="https://milindpersonal-3dportfolio.netlify.app/">🌟 Visit the Portfolio 🌟</a>
+### <a href="https://milindpersonal-3dportfolio.netlify.app/">💫 Visit the Portfolio 💫</a>
 
 ## Features
 
