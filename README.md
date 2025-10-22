@@ -10,8 +10,8 @@ A sleek, responsive personal portfolio built with **React** and **Vite**, design
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![CodeMirror](https://img.shields.io/badge/SCSS-1E1E1E?style=for-the-badge&logo=SCSS&logoColor=white)
-![FontAwesome](https://img.shields.io/badge/FramerMotion-339AF0?style=for-the-badge&logo=FramerMotion&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-1E1E1E?style=for-the-badge&logo=SCSS&logoColor=white)
+![FramerMotion](https://img.shields.io/badge/FramerMotion-339AF0?style=for-the-badge&logo=FramerMotion&logoColor=white)
 
 ## 🔥 Features
 
@@ -36,4 +36,5 @@ npm run dev
 
 ## ❤️ Built With Passion
 This portfolio was created by Milind Yadav with♥️, showcasing skills in React, modern CSS, and frontend animations.
+
 
