@@ -4,7 +4,7 @@
 
 A sleek, responsive personal portfolio built with **React** and **Vite**, designed to showcase projects, skills, and collaboration experiences. With smooth animations and modern UI elements, this site reflects a passion for frontend craftsmanship and creative storytelling.
 
-## 🔗 [Visit the Live Project ✨](https://milind-code-editor.netlify.app/)
+## 🔗 [Visit the Live Project ✨](https://milindpersonal-3dportfolio.netlify.app/)
 
 <br>
 
@@ -44,6 +44,7 @@ npm run dev
 
 ## Built With ❤️
 This portfolio was created by Milind Yadav, showcasing skills in React, modern CSS, and frontend animations.
+
 
 
 
