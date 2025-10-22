@@ -31,7 +31,7 @@ A sleek, responsive personal portfolio built with **React** and **Vite**, design
 
 ```bash
 # Clone the repository
-git clone https://github.com/Milind-Yadav07/CodeEditor.git
+git clone https://github.com/Milind-Yadav07/Portfolio.git
 
 # Install dependencies
 npm install
@@ -44,6 +44,7 @@ npm run dev
 
 ## Built With ❤️
 This portfolio was created by Milind Yadav, showcasing skills in React, modern CSS, and frontend animations.
+
 
 
 
