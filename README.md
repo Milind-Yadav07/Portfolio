@@ -44,8 +44,3 @@ npm run dev
 
 ## Built With ❤️
 This portfolio was created by Milind Yadav, showcasing skills in React, modern CSS, and frontend animations.
-
-
-
-
-

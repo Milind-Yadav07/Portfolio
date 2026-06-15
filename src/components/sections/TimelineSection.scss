@@ -1,0 +1,339 @@
+.timeline-section {
+    // background-color: #e9f54d;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 100px 100px 50vh 100px;
+    box-sizing: border-box;
+}
+
+.section-label {
+    display: block;
+    font-size: 1.1rem; // Slightly smaller for better contrast
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; // Used em for better spacing
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.section-title {
+    font-size: 4rem; // Slightly larger for prominence
+    font-weight: 800;
+    color: #9acd32;
+    margin: 0.5rem 0;
+    line-height: 1.1;
+}
+
+.section-subtitle-text {
+    font-size: 1.4rem; // Slightly larger for readability
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7); // Subtle white
+    margin-bottom: 6rem;
+    max-width: 600px; // Prevent long lines
+    line-height: 1.5;
+}
+
+.timeline-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-container {
+    flex: 1;
+    max-width: 600px;
+    margin: 0;
+    // margin-left: -60px; // Removed negative margin to fit in flex properly
+    padding-right: 20px;
+    position: relative;
+}
+
+// Global line container removed in favor of item-based segments
+
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* Further reduced from 70px for a more compact flow */
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-image-container {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    // Ensure the container takes full height for sticky to work
+    height: auto;
+    margin-bottom: 1.75in; // Ends the sticky container at the 50% mark of the last 3.5in card
+}
+
+.timeline-sticky-wrapper {
+    position: sticky;
+    top: 50vh;
+    width: 100%;
+    height: 0; // Set to 0 so the sticky limit is reached exactly at the center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.timeline-img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-left {
+    position: absolute;
+    left: 10px; // Adjusted for better alignment
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+.timeline-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #050505;
+    border: 2px solid #9acd32; // Matching theme color
+    border-radius: 50%;
+    margin-top: 2.2rem; // Aligns with the title/year in the padded card
+    flex-shrink: 0;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(154, 205, 50, 0.5);
+}
+
+.timeline-connector-wrapper {
+    position: relative;
+    width: 2px; // Slightly wider than background for prominence
+    flex-grow: 1;
+    min-height: 120px;
+    margin-top: 10px;
+}
+
+.timeline-connector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.timeline-content {
+    width: 100%;
+    padding: 2rem;
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-height: 3.5in;
+}
+
+.year {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #9acd32;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.role-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+// .timeline-icon {
+//     width: 24px;
+//     height: 24px;
+//     flex-shrink: 0;
+// }
+
+// .role {
+//     font-size: 1rem;
+//     font-weight: 500;
+//     color: #fff;
+//     margin: 0;
+// }
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+// .description {
+//     font-size: 1.2rem;
+//     line-height: 1.4;
+//     color: #a0a0a0;
+//     margin: 0;
+// }
+
+.details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.3;
+}
+
+/* Responsive styles */
+// Extra Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .timeline-section {
+        padding: 60px 1.5rem 30vh 1.5rem;
+    }
+    
+    .section-label {
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle-text {
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .timeline-layout {
+        flex-direction: column;
+    }
+
+    .timeline-container {
+        max-width: 100%;
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .timeline-image-container {
+        display: none; // Hide image on small screens to focus on content
+    }
+
+    .timeline-left {
+        left: 5px;
+    }
+
+    .timeline-dot {
+        width: 12px;
+        height: 12px;
+        margin-top: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 1rem 1rem 2rem 2.5rem;
+        min-height: auto; // Remove fixed height on mobile since no image
+    }
+
+    .year {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .details li {
+        font-size: 1rem;
+    }
+}
+
+// Small devices (landscape phones, 576px - 767.98px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .timeline-section {
+        padding: 80px 2rem 30vh 2rem;
+    }
+
+    .section-label {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .section-subtitle-text {
+        font-size: 1.2rem;
+    }
+
+    .timeline-layout {
+        flex-direction: column;
+    }
+
+    .timeline-container {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .timeline-image-container {
+        display: none;
+    }
+
+    .timeline-content {
+        min-height: auto;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+// Medium devices (tablets, 768px - 991.98px)
+@media (min-width: 768px) and (max-width: 1024px) {
+    .timeline-section {
+        padding: 80px 3rem 40vh 3rem;
+    }
+
+    .timeline-layout {
+        gap: 30px;
+    }
+
+    .timeline-img {
+        max-height: 40vh;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+    
+    .timeline-content {
+        min-height: 3in;
+    }
+}

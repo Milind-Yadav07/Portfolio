@@ -1,0 +1,187 @@
+.skills-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Vertically center content */
+  padding: 120px 100px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.skills-label {
+  font-size: 1.1rem;
+  /* Match .section-label */
+  letter-spacing: 0.2em;
+  /* Match .section-label */
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  /* Match .section-label */
+  color: #888;
+  font-weight: 500;
+}
+
+.right-pattern-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.skills-title {
+  font-size: 4rem;
+  /* Match .section-title */
+  font-weight: 800;
+  /* Match .section-title */
+  color: #9acd32;
+  margin: 0.5rem 0;
+  /* Match .section-title */
+  line-height: 1.1;
+
+  /* Optional: Text gradient for premium feel if desired, keeping simple white for now or matching theme*/
+  // background: linear-gradient(to right, #fff, #ccc);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+}
+
+.skills-description {
+  font-size: 2rem;
+  /* Match .section-subtitle-text */
+  font-weight: 500;
+  /* Match .section-subtitle-text */
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  /* Match .section-subtitle-text */
+  max-width: 800px;
+  /* Match .section-subtitle-text */
+  margin-bottom: 4rem;
+  /* Match .section-subtitle-text */
+}
+
+.skills-subtitle {
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.skills-icons-row {
+  display: flex;
+  gap: 2rem;
+  /* More breathing room between icons */
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  /* Space between rows */
+}
+
+.skills-icons-row svg,
+.skills-icons-row img {
+  height: 38px;
+  /* Slightly larger icons */
+  width: auto;
+  user-select: none;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* Make icons slightly muted until hover for sophistication */
+  opacity: 0.85;
+
+  &:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+.upscale-icon {
+  height: 52px !important; // Increased size for Java and MySQL
+}
+
+/* Responsive styles */
+// Extra Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .skills-section {
+    padding: 80px 1.5rem;
+    /* Add top/bottom padding */
+    justify-content: flex-start;
+    /* Allow scroll on small styling */
+    min-height: auto;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .skills-description {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .skills-icons-row {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-icons-row svg,
+  .skills-icons-row img {
+    height: 32px;
+  }
+
+  .upscale-icon {
+    height: 42px !important;
+  }
+
+  .right-pattern-svg {
+    width: 150px;
+    opacity: 0.4;
+  }
+}
+
+// Small devices (landscape phones, 576px - 767.98px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .skills-section {
+    padding: 100px 2rem;
+  }
+
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .skills-icons-row {
+    gap: 2rem;
+  }
+}
+
+// Medium devices (tablets, 768px - 991.98px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .skills-section {
+    padding: 100px 3rem;
+  }
+
+  .skills-title {
+    font-size: 3rem;
+  }
+
+  .skills-description {
+    font-size: 1.25rem;
+  }
+}
+
+// Large devices (desktops, 992px - 1199.98px)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .skills-section {
+    padding: 120px 4rem;
+  }
+}

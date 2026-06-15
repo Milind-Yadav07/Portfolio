@@ -1,0 +1,258 @@
+.projects-section-container {
+  // background-color: #ff89f5;
+  position: relative;
+  color: #fff;
+  height: 400vh;
+  width: 100%;
+}
+
+.projects-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projects-header-area {
+  padding-left: 5vw;
+  margin-bottom: 3rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.projects-subheading {
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0rem;
+  font-weight: 500;
+}
+
+.projects-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+  color: #9acd32;
+  margin-bottom: 0px;
+}
+
+.projects-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  margin-top: 0.25rem;
+  margin-bottom: 0%;
+  line-height: 1.4;
+}
+
+.horizontal-scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0%;
+  width: 100%;
+}
+
+.projects-track {
+  display: flex;
+  gap: 4vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  align-items: center;
+}
+
+.project-tile {
+  position: relative;
+  width: 42vw;
+  min-width: 350px;
+  height: 65vh;
+  border-radius: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+  perspective: 1000px;
+  transition: all 0.3s ease;
+}
+
+.project-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+}
+
+
+.tile-bg-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.tile-bg-svg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.5;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: soft-light;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-image-container {
+  position: absolute;
+  inset: 1.5rem;
+  z-index: 2;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-hover-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.overlay-content {
+  text-align: center;
+  transform: scale(0.8);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.overlay-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-tile:hover {
+  .project-hover-overlay {
+    opacity: 1;
+  }
+
+  .overlay-content {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .project-tile {
+    width: 45vw;
+    height: 60vw; // More proportional to width
+    min-width: 300px;
+    min-height: 400px;
+    max-height: 500px;
+  }
+
+  .projects-heading {
+    font-size: 3rem;
+  }
+
+  .projects-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section-container {
+    height: 400vh; // Preserve scroll animation height
+  }
+
+  .projects-header-area {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-subheading {
+    font-size: 1rem;
+  }
+
+  .projects-heading {
+    font-size: 2.5rem;
+  }
+
+  .projects-text {
+    font-size: 1.2rem;
+  }
+
+  .projects-track {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .project-tile {
+    width: 75vw;
+    min-width: 280px;
+    height: 200px;
+    max-height: 200px;
+  }
+
+  .overlay-title {
+    font-size: 2rem;
+  }
+
+  .project-image-container {
+    inset: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-heading {
+    font-size: 2rem;
+  }
+  
+  .projects-text {
+    font-size: 1rem;
+  }
+
+  .project-tile {
+    width: 85vw;
+    height: 30vh;
+    max-height: 280px;
+  }
+
+  .overlay-title {
+    font-size: 1.5rem;
+  }
+
+  .project-image-container {
+    inset: 0.8rem;
+  }
+}

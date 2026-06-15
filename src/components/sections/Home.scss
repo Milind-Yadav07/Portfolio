@@ -1,0 +1,431 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-text-container {
+    width: 50%;
+    height: 100%;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro-text {
+    color: #9acd32;
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+}
+
+.name-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.name-highlight {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #9acd32;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+    margin-right: 0.5rem;
+}
+
+.subtitle-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #7f8c8d;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a {
+    color: #7f8c8d;
+    font-size: 1.8rem;
+}
+
+.social-icons a:hover {
+    color: rgb(154, 205, 50);
+}
+
+.resume-button {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #6038ff;
+}
+
+/* 3D Cube Spinner using CSS custom properties */
+.stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    padding-top: 18%;
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+
+.cubespinner {
+    transform-style: preserve-3d;
+    
+    /* Variables for scaling the cube */
+    --cube-size: 200px;
+    --cube-translate: 100px;
+    --cube-font-size: 100px;
+
+    transform-origin: var(--cube-translate) var(--cube-translate) 0;
+    margin-left: calc(50% - var(--cube-translate));
+    width: var(--cube-size);
+    height: var(--cube-size);
+
+    div {
+        position: absolute;
+        width: var(--cube-size);
+        height: var(--cube-size);
+        border: 1px solid #ccc;
+        background: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        font-size: var(--cube-font-size);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
+
+    .face1 {
+        transform: translateZ(var(--cube-translate));
+        color: #dd0031;
+    }
+
+    .face2 {
+        transform: rotateY(90deg) translateZ(var(--cube-translate));
+        color: #f06529;
+    }
+
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(var(--cube-translate));
+        color: #28a4d9;
+    }
+
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(var(--cube-translate));
+        color: #5ed4f4;
+    }
+
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(var(--cube-translate));
+        color: #efd81d;
+    }
+
+    .face6 {
+        transform: rotateX(-90deg) translateZ(var(--cube-translate));
+        color: #ec4d28;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-text-container {
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+        min-height: 60vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .name-heading {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        justify-content: center;
+    }
+
+    .subtitle-text {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    .resume-button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .stage-cube-cont {
+        width: 100%;
+        position: relative;
+        right: auto;
+        margin-left: 0;
+        height: 250px;
+        min-height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .cubespinner {
+        margin-left: 0;
+        transform-origin: center center 0;
+        --cube-size: 100px;
+        --cube-translate: 50px;
+        --cube-font-size: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-text-container {
+        width: 100%;
+        padding: 1.5rem;
+        height: auto;
+        min-height: 60vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .name-heading {
+        font-size: 2.2rem;
+        justify-content: center;
+    }
+
+    .subtitle-text {
+        font-size: 1.3rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 1.2rem;
+    }
+
+    .social-icons a {
+        font-size: 1.4rem;
+    }
+
+    .resume-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .stage-cube-cont {
+        width: 100%;
+        position: relative;
+        right: auto;
+        margin-left: 0;
+        height: 320px;
+        min-height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .cubespinner {
+        margin-left: 0;
+        transform-origin: center center 0;
+        --cube-size: 140px;
+        --cube-translate: 70px;
+        --cube-font-size: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-text-container {
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+        min-height: 60vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+
+    .name-heading {
+        font-size: 2.8rem;
+        justify-content: center;
+    }
+
+    .subtitle-text {
+        font-size: 1.6rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .social-icons a {
+        font-size: 1.6rem;
+    }
+
+    .resume-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .stage-cube-cont {
+        width: 100%;
+        position: relative;
+        right: auto;
+        margin-left: 0;
+        height: 400px;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .cubespinner {
+        margin-left: 0;
+        transform-origin: center center 0;
+        --cube-size: 160px;
+        --cube-translate: 80px;
+        --cube-font-size: 80px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home-container {
+        flex-direction: row;
+    }
+
+    .left-text-container {
+        width: 55%;
+        padding-left: 3rem;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+
+    .name-heading {
+        font-size: 3rem;
+    }
+
+    .subtitle-text {
+        font-size: 1.8rem;
+    }
+
+    .social-icons a {
+        font-size: 1.6rem;
+    }
+
+    .stage-cube-cont {
+        width: 45%;
+        padding-top: 15%;
+    }
+
+    .cubespinner {
+        --cube-size: 180px;
+        --cube-translate: 90px;
+        --cube-font-size: 90px;
+        transform-origin: var(--cube-translate) var(--cube-translate) 0;
+        margin-left: calc(50% - var(--cube-translate));
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-container {
+        flex-direction: row;
+    }
+
+    .left-text-container {
+        width: 50%;
+        padding-left: 5rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .name-heading {
+        font-size: 3.5rem;
+    }
+
+    .subtitle-text {
+        font-size: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 1.8rem;
+    }
+
+    .stage-cube-cont {
+        width: 50%;
+        top: 0;
+        padding-top: 18%;
+        margin-left: 0;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+    }
+
+    .cubespinner {
+        --cube-size: 200px;
+        --cube-translate: 100px;
+        --cube-font-size: 100px;
+        transform-origin: var(--cube-translate) var(--cube-translate) 0;
+        margin-left: calc(50% - var(--cube-translate));
+    }
+}
