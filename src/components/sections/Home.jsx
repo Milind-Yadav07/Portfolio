@@ -8,12 +8,11 @@ import './Home.scss';
 
 const Home = () => {
     const el = useRef(null);
-    const resumeButtonRef = useRef(null);
 
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
-                'A pragmatic Fullstack Developer',
+                'A pragmatic Software Developer',
                 'Build AI-integrated applications',
                 'Develop high-performance solutions',
                 'Build engaging user experiences'
@@ -84,19 +83,6 @@ const Home = () => {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </Motion.div>
-                <Motion.a
-                    href="/Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="resume-button"
-                    aria-label="Resume"
-                    ref={resumeButtonRef}
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Resume
-                </Motion.a>
             </div>
             <Motion.div
                 className="stage-cube-cont"

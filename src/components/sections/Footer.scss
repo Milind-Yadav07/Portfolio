@@ -1,140 +1,123 @@
 .footer-container {
     position: relative;
     width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
+    background: transparent;
     overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 12rem;
+    padding: 4rem 8%;
+    color: #ffffff;
 
-
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 4rem 10%;
-        z-index: 2;
-    }
-
-    .footer-left {
-        flex: 1.5;
-        display: flex;
-        justify-content: flex-start;
-
-        .social-wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: fit-content;
-
-            .social-heading {
-                font-size: 3.5rem;
-                font-weight: 900;
-                color: white;
-                line-height: 1.1;
-                margin-bottom: 2rem;
-
-                .accounts-highlight {
-                    text-decoration: underline;
-                    text-decoration-color: #9acd32;
-                    text-underline-offset: 10px; // Adjusted for larger font size
-                    text-decoration-thickness: 4px; // Adjusted for larger font size
-                }
-            }
-
-            .social-links {
-                display: flex;
-                gap: 1.5rem;
-
-                .social-icon {
-                    font-size: 2rem;
-                    color: #7f8c8d;
-                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 50px;
-                    height: 50px;
-
-                    &:hover {
-                        color: #9acd32;
-                        transform: translateY(-5px);
-                        border-color: #9acd32;
-                    }
-                }
-            }
-        }
-    }
-
-    .footer-svg-container {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        pointer-events: none;
-
-        .footer-svg {
-            width: 100%;
-            max-width: 500px;
-            height: auto;
-            opacity: 0.9;
-            filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.2));
-            animation: float 6s ease-in-out infinite;
-        }
-    }
-
-    .left-pattern {
+    .footer-glow-orb {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 250px;
-        height: auto;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(154, 205, 50, 0.15) 0%, rgba(154, 205, 50, 0) 70%);
         pointer-events: none;
         z-index: 1;
-        margin: 0;
-        display: block;
-    }
-}
 
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
+        &.footer-glow-right {
+            bottom: -100px;
+            right: -100px;
+            background: radial-gradient(circle, rgba(154, 205, 50, 0.2) 0%, rgba(154, 205, 50, 0) 70%);
+        }
     }
 
-    50% {
-        transform: translateY(-40px);
-    }
-}
-
-@keyframes move-bg {
-    to {
-        background-position: 200% center;
-    }
-}
-
-@media (max-width: 768px) {
     .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-    }
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+        max-width: 1300px;
+        margin: 0 auto;
 
-    .footer-left {
-        max-width: 100%;
+        .footer-left {
+            flex: 1.4;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-        .social-heading {
-            font-size: 3rem;
-            letter-spacing: -1px;
+            .footer-bio {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.65rem;
+                line-height: 1.7;
+                font-style: italic;
+                color: #f1f5f9;
+                letter-spacing: 0.3px;
+                text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+                &::first-letter {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                    color: #9acd32;
+                }
+            }
         }
 
-        .social-links {
-            justify-content: center;
-        }
-    }
+        .footer-right {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
 
-    .footer-svg-container {
-        justify-content: center;
+            .photo-card {
+                position: relative;
+                width: 380px;
+                height: 500px;
+                border-radius: 24px;
+                overflow: hidden;
+                border: 2px solid rgba(154, 205, 50, 0.4);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 30px rgba(154, 205, 50, 0.2);
+
+                .footer-photo {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                }
+
+                .photo-overlay-glow {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(180deg, transparent 60%, rgba(10, 15, 25, 0.6) 100%);
+                    pointer-events: none;
+                }
+            }
+        }
     }
 }
+
+@media (max-width: 900px) {
+    .footer-container {
+        margin-top: 8rem;
+        padding: 4rem 6% 2rem 6%;
+
+        .footer-content {
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 3rem;
+
+            .footer-left {
+                align-items: center;
+
+                .footer-bio {
+                    font-size: 1.35rem;
+                    text-align: center;
+                }
+            }
+
+            .footer-right {
+                justify-content: center;
+
+                .photo-card {
+                    width: 300px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+

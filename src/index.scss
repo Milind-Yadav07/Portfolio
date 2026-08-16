@@ -1,3 +1,8 @@
+body, input, textarea, button, select {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
 body {
   background-image: url('/layout/bg-image.png'); 
   background-color: #000000;
@@ -16,6 +21,7 @@ body {
   *::before,
   *::after {
     box-sizing: inherit;
+    font-family: inherit;
   }
 }
 
