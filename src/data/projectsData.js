@@ -1,9 +1,9 @@
 export const projectsData = [
     {
-        title: 'ResumeAI',
+        title: 'Data Talk',
         image: '/projects/slide2.svg',
-        link: 'https://resumeai-ats.netlify.app/',
-        description: 'AI-powered resume analyzer and optimizer tailored for ATS matching systems.',
+        link: 'https://data-talk-seven.vercel.app/',
+        description: 'RAG-powered app that turns natural language questions into live charts.',
         gradient: 'linear-gradient(135deg, #90ebffff 0%, #00e1ffff 100%)'
     },
     {
