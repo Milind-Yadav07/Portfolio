@@ -30,7 +30,7 @@ export const TIMELINE_DATA = [
     {
         description: 'IBM',
         details: [
-            'Earned a BCA with a specialization in Artificial Intelligence through a collaborative program between United University and IBM , completing a rigorous three-year curriculum focused on industry-standard AI technologies'
+            'Earned a BCA with a specialization in Artificial Intelligence through a collaborative program between United University and IBM , completing a rigorous three year curriculum focused on industry standard AI technologies'
         ],
         img: '/Achievements/IBM-certificate.webp'
     }

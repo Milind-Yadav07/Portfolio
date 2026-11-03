@@ -47,8 +47,8 @@ const Skills = () => {
         <Motion.p className="skills-label" variants={itemVariants}>SKILLS</Motion.p>
         <Motion.h2 className="skills-title" variants={itemVariants}>My Skills</Motion.h2>
         <Motion.p className="skills-description" variants={itemVariants}>
-          I like to take responsibility to craft AI-driven applications <br />
-          using modern frontend and backend architecture.
+          I like to take responsibility to craft AI integrated systems  <br />
+          using modern frontend and backend architecture
         </Motion.p>
         <Motion.div className="skills-icons-section" variants={iconRowVariants}>
           <Motion.h3 className="skills-subtitle" variants={itemVariants}>LANGUAGES</Motion.h3>

@@ -9,18 +9,13 @@
 
     .footer-glow-orb {
         position: absolute;
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(154, 205, 50, 0.15) 0%, rgba(154, 205, 50, 0) 70%);
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(to top, rgba(154, 205, 50, 0.2) 0%, rgba(154, 205, 50, 0) 100%);
         pointer-events: none;
         z-index: 1;
-
-        &.footer-glow-right {
-            bottom: -100px;
-            right: -100px;
-            background: radial-gradient(circle, rgba(154, 205, 50, 0.2) 0%, rgba(154, 205, 50, 0) 70%);
-        }
     }
 
     .footer-content {
@@ -119,5 +114,3 @@
         }
     }
 }
-
-

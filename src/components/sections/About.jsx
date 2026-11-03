@@ -43,14 +43,14 @@ const About = () => {
           className="about-1"
           style={{ color: color1 }}
         >
-          I am a full-stack developer bridging the gap between robust system architecture and design.
+          I am a full stack developer bridging the gap between robust system architecture and design
         </motion.span>
         <motion.span
           ref={line2Ref}
           className="about-2"
           style={{ color: color2 }}
         >
-          I craft high-performance, AI-driven applications focused on seamless and scalable user experiences.
+          I craft high performance, AI integrated systems that delivers seamless and scalable user experiences
         </motion.span>
       </h1>
     </section>
